@@ -12,3 +12,172 @@ body {
   width: 50px;
 }
 
+.micontenedor{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-evenly;
+}
+
+/*
+De acá para abajo hay código que solo dios 
+y yo sabemos lo que hace.
+*/
+
+@media (max-width:767px)
+{
+
+
+  .logo{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: spacebetween;
+    align-items: center;
+  }
+  .product{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .hamburger{
+    display:flex;
+    justify-content: flex-end;
+    background-color: gray;
+    color:white;
+    height:45px;
+    align-items: center;
+  }
+
+  li
+  {
+    display:flex;
+    justify-content:end;
+  }
+
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+}
+
+/* Media Query for Tablets */ 
+@media (max-width:1024px) and (min-width: 768px) { 
+
+
+  .logo{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: spacebetween;
+    align-items: center;
+  }
+
+  .product{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .menu{
+    display:none;
+   
+  }
+
+  .hamburger{
+    display:flex;
+    justify-content: flex-end;
+    background-color: gray;
+    color:white;
+    height:45px;
+    align-items: center;
+  }
+
+  li
+  {
+    display:flex;
+    justify-content:end;
+  }
+
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+    
+  }
+
+
+} 
+
+/* Media Query for bigscreens */ 
+@media (min-width: 1025px) { 
+  .logo{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+  }
+
+  .product{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 230px;
+    margin-right: 230px;
+  }
+/*
+.navbar{
+  display:flex;
+}*/
+
+.menu{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  background-color: gray;
+  color:white;
+  height:45px;
+  align-items: center;
+}
+
+li
+  {
+    display:flex;
+    justify-content:end;
+  }
+
+.hamburger{
+  display:none;
+  
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-right: 7%;
+
+}
+
+} 
